@@ -17,4 +17,7 @@ export class GetticketService {
   postTickets(out){
     return this.HttpClient.post<any>(this.url, out);
   }
+  deleteTickets(out){
+    return this.HttpClient.delete<any>('http://localhost:7878/api/v1/tickets/' + out)
+  }
 }

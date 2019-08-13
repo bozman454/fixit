@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewticketComponent } from './newticket/newticket.component';
 import { SelectticketComponent } from './selectticket/selectticket.component';
+import { AuthGuardService as AuthGuard} from './auth-guard.service';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },

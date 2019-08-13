@@ -1,1 +1,22 @@
-<p>selectticket works!</p>
+<h2>Displaying selected ticket below:</h2>
+<button (click)=deleteticket(selected.ticket_id)>Delete Ticket</button>
+<table class="table">
+        <tr>
+            <th>Ticket ID</th>
+            <th>Customer Name</th>
+            <th>Assigned Technician</th>
+            <th>Device Model</th>
+            <th>Device Status</th>
+            <th>Device Notes</th>
+        </tr>
+        <tr>
+            <td>{{selected.ticket_id}}</td>
+            <td>{{selected.customer_name}}</td>
+            <td>{{selected.assigned_technician}}</td>
+            <td>{{selected.device_model}}</td>
+            <td>{{selected.device_status}}</td>
+            <td>{{selected.device_notes}}</td>
+            
+        </tr>
+</table>
+

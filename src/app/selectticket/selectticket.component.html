@@ -1,6 +1,8 @@
 <h2>Displaying selected ticket below:</h2>
-<button (click)=deleteticket(selected.ticket_id)>Delete Ticket</button>
-<table class="table">
+<button type="button" class="btn btn-outline-success" (click)=gotodash()>Dashboard</button> 
+<button type="button" class="btn btn-outline-primary" (click)=editticket()>Edit Ticket</button> 
+<button type="button" class="btn btn-outline-danger" (click)=deleteticket(selected.ticket_id)>Delete Ticket</button>
+<table  class="table">
         <tr>
             <th>Ticket ID</th>
             <th>Customer Name</th>
@@ -20,3 +22,13 @@
         </tr>
 </table>
 
+<div class="editticket" *ngIf="edittick">
+<p>Ticket Edit Screen</p>
+Customer Name<input required #name><br>
+Assigned Technician<input required #tech><br>
+Device Model<input required #model><br>
+Device Status<input required #status><br>
+Device Notes<input required #notes><br>
+<button type="button" class="btn btn-outline-primary"
+ (click)="submitedit(selected.ticket_id, name.value, tech.value, model.value, status.value, notes.value)">Submit Ticket Edit</button>
+</div>

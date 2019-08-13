@@ -20,4 +20,8 @@ export class GetticketService {
   deleteTickets(out){
     return this.HttpClient.delete<any>('http://localhost:7878/api/v1/tickets/' + out)
   }
+
+  editTicket(out){
+    return this.HttpClient.post<any>('http://localhost:7878/api/v1/tickets/editticket', out)
+  }
 }

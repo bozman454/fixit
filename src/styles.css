@@ -3,4 +3,12 @@
 }
 .table tr:hover{
     background-color: aliceblue;
+    
+}
+body{
+  padding: 15px;
+}
+nav{
+  font-family: monospace;
+
 }

@@ -1,8 +1,7 @@
 <div class="form-group">
-<h2>Fill out the forms below:</h2>
 Customer Name:<input style="width:50%" class="form-control"#name placeholder="enter customer name here"><br>
 Assigned Technician:<input style="width:50%" class="form-control"#tech placeholder="enter assigned technician here"><br>
 Device Model:<input style="width:50%" class="form-control"#dmodel placeholder="enter device model here"><br>
 Notes on repair:<input style="width:50%" class="form-control"#dnotes placeholder="enter notes here"><br>
-<button (click)="newtick(name.value, tech.value, dmodel.value, dnotes.value); name.value = ''; tech.value = ''; dmodel.value = ''; dnotes.value ='';">Submit</button>
+<button type="button" class="btn btn-outline-primary" (click)="newtick(name.value, tech.value, dmodel.value, dnotes.value); name.value = ''; tech.value = ''; dmodel.value = ''; dnotes.value ='';">Submit</button>
 </div>

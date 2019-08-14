@@ -1,5 +1,4 @@
 <h2>Displaying selected ticket below:</h2>
-<button type="button" class="btn btn-outline-success" (click)=gotodash()>Dashboard</button> 
 <button type="button" class="btn btn-outline-primary" (click)=editticket()>Edit Ticket</button> 
 <button type="button" class="btn btn-outline-danger" (click)=deleteticket(selected.ticket_id)>Delete Ticket</button>
 <table  class="table">
@@ -18,7 +17,7 @@
             <td>{{selected.device_model}}</td>
             <td>{{selected.device_status}}</td>
             <td>{{selected.device_notes}}</td>
-            
+
         </tr>
 </table>
 
